@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mievo Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login-styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                Mievo<span class="text-teal">Tech</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="nav-link active" data-section="intro">Intro</a>
+                <a href="#" class="nav-link" data-section="services">Services</a>
+                <a href="#" class="nav-link" data-section="careers">Careers</a>
+                <a href="#" class="nav-link" data-section="contact">Contact</a>
+            </nav>
+            <div class="login-section">
+                <div id="loginSection">
+                     <h2 class="login-title">Client Login</h2>
+                     <form id="loginForm">
+                         <input type="text" id="name" placeholder="Enter your name" required>
+                         <input type="email" id="email" placeholder="Enter your email" required>
+                         <button type="submit">Send OTP</button>
+                     </form>
+                </div>
+                <div id="otpSection" class="hidden">
+                    <h2 class="login-title">Verify OTP</h2>
+                    <p class="otp-message">An OTP has been sent to your email.</p>
+                    <form id="otpForm">
+                        <input type="text" id="otpInput" placeholder="Enter OTP" required>
+                        <button type="submit">Verify & Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div id="intro" class="content-section active">
+                <h1>WE ARE MIEVO TECHNOLOGIES</h1>
+                <p>Flexible & Universal for all your business needs. We are a premier Electrical & Electronics R&D Company, committed to delivering first-rate products and exceptional customer service.</p>
+            </div>
+            <div id="services" class="content-section">
+                <h1>Our Services</h1>
+                <p>We offer end-to-end R&D, PCB design, embedded systems, and more. Our expertise in GaN, microcontrollers, and advanced circuit design ensures top-tier solutions for the electronics industry.</p>
+            </div>
+            <div id="careers" class="content-section">
+                <h1>Careers</h1>
+                <p>Join our team of innovators and help shape the future of electronics. We are always looking for passionate individuals to join our journey.</p>
+            </div>
+             <div id="contact" class="content-section">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for your next project.</p>
+                <p><strong>Email:</strong> contact@mievotech.com</p>
+                <p><strong>Phone:</strong> +91 9807544021</p>
+            </div>
+        </div>
+    </div>
+    <script src="login-script.js"></script>
+</body>
+</html>

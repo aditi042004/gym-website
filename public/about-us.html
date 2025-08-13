@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mievo Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to main styles for consistency -->
+    <link rel="stylesheet" href="about-us.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-logo">Mievo<span class="text-teal">Tech</span></div>
+        <nav class="nav-menu" id="mainNavMenu">
+            <div class="nav-item" onclick="location.href='index.html'">Home</div>
+            <div class="nav-item" onclick="location.href='shop.html'">Shop 🛒</div>
+            <div class="nav-item" onclick="location.href='about-us.html'">About Us</div>
+            <div class="nav-item" onclick="location.href='store-policies.html'">Store Policies</div>
+            <div class="nav-item" onclick="location.href='contact.html'">Contact</div>
+            <div class="nav-item" onclick="location.href='login.html'">Login</div>
+        </nav>
+         <!-- Mobile Menu Toggle Button (for consistency) -->
+        <button class="menu-toggle" id="menuToggle">
+            <span class="burger-icon"></span>
+            <span class="burger-icon"></span>
+            <span class="burger-icon"></span>
+        </button>
+    </header>
+
+    <!-- Mobile Dropdown Menu (for consistency) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="nav-item" onclick="location.href='index.html'">Home</div>
+        <div class="nav-item" onclick="location.href='shop.html'">Shop 🛒</div>
+        <div class="nav-item" onclick="location.href='about-us.html'">About Us</div>
+        <div class="nav-item" onclick="location.href='store-policies.html'">Store Policies</div>
+        <div class="nav-item" onclick="location.href='contact.html'">Contact</div>
+        <div class="nav-item" onclick="location.href='login.html'">Login</div>
+    </div>
+
+    <main>
+        <section class="about-content">
+            <div class="about-text">
+                <h2 class="section-heading-small">OUR <span class="text-teal">ORIGINS</span></h2>
+                <h3 class="about-subtitle">Electrical & Electronics R&D Company since 2018</h3>
+                <p>Mievo Technologies Private Limited is a trendsetting online store, offering our first-rate products and exceptional customer service to shoppers from the comfort of their own homes. We're a business made up of innovators and forward-thinkers, with the drive and wherewithal to constantly update and improve the online shopping experience.</p>
+                <p>Our online store has become synonymous with quality, and we ensure a continuous variety of fantastic merchandise that fit any budget. We specialize in **Appliances, Electrical, and Electronics Manufacturing**.</p>
+                <p>Headquartered in **Kanpur, Uttar Pradesh**, we were **Founded in 2018**. Our company size is **2-10 employees**, with **3 associated members** who are active LinkedIn professionals.</p>
+                <button onclick="location.href='contact.html'" class="cta-button small-button">Get in Touch</button>
+                
+            </div>
+            <div class="about-image">
+                <img src="b29ffa_206f3de3f5fa479883a1082b4687889a~mv2.avif" alt="About Us Image: A technician working on a circuit board, symbolizing precision and innovation" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1A2B42/FFFFFF?text=About+Us+Image';">
+            </div>
+        </section>
+        <button onclick="location.href='index.html'" class="back-to-home-button">Back to Home</button>
+  </main>
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p><strong>Mievo Technologies Private Limited</strong></p>
+        <p>Electrical & Electronics R&D Company</p>
+        <p>Precision Engineering & Software Solutions</p>
+        <p>Headquarters: Kanpur, Uttar Pradesh | Founded: 2018</p>
+        <p>Company Size: 2-10 employees (3 associated members) | Industry: Appliances, Electrical, and Electronics Manufacturing</p>
+        <p>📧 contact@mievotech.com | 📞 +91 9807544021</p>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/MievoTechnologies" target="_blank">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>&copy; {new Date().getFullYear()} Mievo Technologies. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to main script.js for general functionalities like mobile menu -->
+</body>
+</html>

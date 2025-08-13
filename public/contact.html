@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Mievo Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" /> <!-- Link to main styles for consistency -->
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-logo">Mievo<span class="text-teal">Tech</span></div>
+    <nav class="nav-menu" id="mainNavMenu">
+      <div class="nav-item" onclick="location.href='index.html'">Home</div>
+      <div class="nav-item" onclick="location.href='shop.html'">Shop 🛒</div>
+      <div class="nav-item" onclick="location.href='about-us.html'">About Us</div>
+      <div class="nav-item" onclick="location.href='store-policies.html'">Store Policies</div>
+      <div class="nav-item" onclick="location.href='contact.html'">Contact</div>
+      <div class="nav-item" onclick="location.href='login.html'">Login</div>
+    </nav>
+    <!-- Mobile Menu Toggle Button (for consistency) -->
+    <button class="menu-toggle" id="menuToggle">
+        <span class="burger-icon"></span>
+        <span class="burger-icon"></span>
+        <span class="burger-icon"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Dropdown Menu (for consistency) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="nav-item" onclick="location.href='index.html'">Home</div>
+    <div class="nav-item" onclick="location.href='shop.html'">Shop 🛒</div>
+    <div class="nav-item" onclick="location.href='about-us.html'">About Us</div>
+    <div class="nav-item" onclick="location.href='store-policies.html'">Store Policies</div>
+    <div class="nav-item" onclick="location.href='contact.html'">Contact</div>
+    <div class="nav-item" onclick="location.href='login.html'">Login</div>
+  </div>
+
+  <main>
+    <section class="contact-section">
+      <!-- Left Side -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>
+          <strong>Mievo Technologies Pvt. Ltd.</strong><br />
+          Araji-1528, Barasirohi, Kalyanpur<br />
+          Kanpur, Uttar Pradesh 208016<br />
+          <br>
+          📧 <strong class="text-teal">contact@mievotech.com</strong><br />
+          📞 <strong class="text-teal">+91 9807544021</strong>
+        </p>
+        <div class="map-placeholder">
+          <!-- Using the correct map iframe with your specific address -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.413725539316!2d80.2307525!3d26.513152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3701c4a8be71%3A0x3afbe880abc38436!2sIndian%20Institute%20of%20Technology%20Kanpur!5e0!3m2!1sen!2sin!4v1718876543210!5m2!1sen!2sin"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            onerror="this.src='https://placehold.co/600x450/cccccc/333333?text=Map+Unavailable'">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="contact-form-container">
+        <h2>Send a Message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="Your Phone Number" />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Your Address" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject of your message" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit Message</button>
+        </form>
+      </div>
+    </section>
+
+    <button onclick="location.href='index.html'" class="back-to-home-button">Back to Home</button>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+      <p><strong>Mievo Technologies Private Limited</strong></p>
+      <p>Electrical & Electronics R&D Company</p>
+      <p>Precision Engineering & Software Solutions</p>
+      <p>Headquarters: Kanpur, Uttar Pradesh | Founded: 2018</p>
+      <p>Company Size: 2-10 employees (3 associated members) | Industry: Appliances, Electrical, and Electronics Manufacturing</p>
+      <p>📧 contact@mievotech.com | 📞 +91 9807544021</p>
+      <div class="footer-links">
+          <a href="https://www.facebook.com/MievoTechnologies" target="_blank">Facebook</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+      </div>
+      <p>&copy; {new Date().getFullYear()} Mievo Technologies. All rights reserved.</p>
+  </footer>
+
+  <script src="contact.js"></script> <!-- Specific script for contact form -->
+  <script src="script.js"></script> <!-- Link to main script.js for general functionalities like mobile menu -->
+</body>
+</html>

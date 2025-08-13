@@ -1,0 +1,226 @@
+/* Contact Page Specific Styles */
+body {
+  font-family: 'Inter', sans-serif; /* Consistent font */
+  background-color: var(--primary-dark); /* Consistent background */
+  color: var(--text-light); /* Consistent text color */
+}
+
+/* Navbar (will inherit most from styles.css) */
+.navbar {
+  background-color: var(--secondary-dark);
+  color: var(--accent-amber);
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 40px; /* Increased padding */
+  gap: 50px; /* Increased gap */
+  justify-content: center;
+  background-color: var(--primary-dark);
+}
+
+/* Left Side Info */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px; /* Adjusted max-width */
+  background-color: var(--secondary-dark); /* Consistent card background */
+  padding: 40px; /* Increased padding */
+  border-radius: 12px; /* Consistent rounded corners */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* Consistent shadow */
+  border: 1px solid var(--border-color); /* Consistent border */
+  text-align: left; /* Align text left within info block */
+}
+
+.contact-info h2 {
+  font-size: 2.8em; /* Consistent heading size */
+  color: var(--text-light); /* Consistent heading color */
+  margin-bottom: 25px;
+  text-align: center; /* Center heading */
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-size: 1.1em; /* Consistent font size */
+  line-height: 1.8;
+  color: var(--text-medium); /* Consistent text color */
+}
+
+.contact-info strong { /* For highlighting contact details */
+  color: var(--accent-teal);
+}
+
+/* Right Side Form */
+.contact-form-container { /* Renamed for clarity */
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px; /* Adjusted max-width */
+  background-color: var(--secondary-dark); /* Consistent card background */
+  padding: 40px; /* Increased padding */
+  border-radius: 12px; /* Consistent rounded corners */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* Consistent shadow */
+  border: 1px solid var(--border-color); /* Consistent border */
+}
+
+.contact-form-container h2 {
+  font-size: 2.8em; /* Consistent heading size */
+  color: var(--text-light); /* Consistent heading color */
+  margin-bottom: 25px;
+  text-align: center; /* Center heading */
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  background-color: var(--primary-dark); /* Consistent input background */
+  border: 1px solid var(--border-color); /* Consistent input border */
+  color: var(--text-light); /* Consistent input text color */
+  padding: 15px; /* Increased padding */
+  border-radius: 8px; /* Consistent rounded corners */
+  font-size: 1em; /* Consistent font size */
+  resize: vertical; /* Allow vertical resizing for textarea */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-medium); /* Consistent placeholder color */
+  opacity: 0.7;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent-teal); /* Highlight on focus */
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.3); /* Teal glow on focus */
+}
+
+/* Submit Button */
+.submit-button { /* Renamed from generic 'button' */
+  padding: 16px 35px; /* Consistent with other buttons */
+  background-color: var(--accent-amber); /* Consistent accent color */
+  color: var(--primary-dark); /* Dark text on button */
+  border: none;
+  border-radius: 50px; /* Consistent rounded buttons */
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 700;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button:hover {
+  background-color: #e6b300;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Back Button */
+.back-to-home-button { /* Renamed for clarity */
+  margin: 50px auto 40px; /* Adjusted margins */
+  display: block;
+  background-color: var(--accent-teal); /* Consistent accent color */
+  color: var(--primary-dark); /* Dark text */
+  padding: 14px 30px; /* Consistent with small buttons */
+  border-radius: 50px; /* Consistent rounded buttons */
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-decoration: none; /* For direct link button */
+}
+
+.back-to-home-button:hover {
+  background-color: var(--chat-hover); /* Darker teal */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.map-placeholder { /* Added for map styling consistency */
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+}
+
+.map-placeholder iframe {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+/* Footer (inherits from styles.css) */
+.footer {
+    background-color: var(--secondary-dark);
+    color: var(--text-medium);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 60px 20px;
+  }
+  .contact-info, .contact-form-container {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column; /* Stack columns */
+    gap: 30px;
+  }
+  .contact-info, .contact-form-container {
+    max-width: 100%; /* Take full width */
+    padding: 30px;
+  }
+  .contact-info h2, .contact-form-container h2 {
+    font-size: 2.2em;
+  }
+  .contact-info p, .form-group label, input, textarea {
+    font-size: 0.95em;
+  }
+  .submit-button, .back-to-home-button {
+    font-size: 1em;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+  .contact-info, .contact-form-container {
+    padding: 20px;
+  }
+  .contact-info h2, .contact-form-container h2 {
+    font-size: 1.8em;
+  }
+  .map-placeholder iframe {
+    height: 250px;
+  }
+}

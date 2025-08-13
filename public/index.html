@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="auth.js"></script>
+  <title>Mievo Technologies - Electrical & Electronics R&D</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/responsivevoice/1.5.14/responsivevoice.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-logo">Mievo<span class="text-teal">Tech</span></div>
+    <nav class="nav-menu" id="mainNavMenu">
+      <div id="welcomeMessage" class="nav-item"></div>
+      <div class="nav-item" onclick="scrollToSection('home')">Home</div>
+      <div class="nav-item" onclick="scrollToSection('about')">About Us</div>
+      <div class="nav-item" onclick="scrollToSection('services')">Services</div>
+      <div class="nav-item" onclick="scrollToSection('portfolio')">Portfolio</div>
+      
+      <div class="nav-item" id="mobileLogoutButton">Logout</div>
+      <div class="nav-item dropdown" id="moreDropdownToggle">
+        <div class="nav-item dropdown" id="moreDropdown">
+       
+        <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        <div class="dropdown-content" id="moreDropdownContent">
+          <div class="nav-item" onclick="location.href='shop.html'">Shop 🛒</div>
+          <a class="dropdown-item" onclick="scrollToSection('why-choose-us')">Why Choose Us</a>
+          <a class="dropdown-item" onclick="scrollToSection('partners')">Partners</a>
+          <a class="dropdown-item" onclick="scrollToSection('testimonials')">Testimonials</a>
+          <a class="dropdown-item" onclick="scrollToSection('faq')">FAQ</a>
+          <a class="dropdown-item" onclick="scrollToSection('team')">Team</a>
+          <a class="dropdown-item" onclick="scrollToSection('blog')">Blog</a>
+          <a class="dropdown-item" onclick="location.href='store-policies.html'">Store Policies</a>
+          <a class="dropdown-item" onclick="location.href='contact.html'">Contact</a>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <button class="menu-toggle" id="menuToggle">
+      <span class="burger-icon"></span>
+      <span class="burger-icon"></span>
+      <span class="burger-icon"></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="nav-item" onclick="scrollToSection('home')">Home</div>
+    <div class="nav-item" onclick="location.href='shop.html'">Shop 🛒</div>
+    <div class="nav-item" onclick="scrollToSection('about')">About Us</div>
+    <div class="nav-item" onclick="scrollToSection('why-choose-us')">Why Choose Us</div>
+    <div class="nav-item" onclick="scrollToSection('services')">Services</div>
+    <div class="nav-item" onclick="scrollToSection('portfolio')">Portfolio</div>
+    <div class="nav-item" onclick="scrollToSection('partners')">Partners</div>
+    <div class="nav-item" onclick="scrollToSection('testimonials')">Testimonials</div>
+    <div class="nav-item" onclick="scrollToSection('faq')">FAQ</div>
+    <div class="nav-item" onclick="scrollToSection('team')">Team</div>
+    <div class="nav-item" onclick="scrollToSection('blog')">Blog</div>
+    <div class="nav-item" onclick="location.href='store-policies.html'">Store Policies</div>
+    <div class="nav-item" onclick="location.href='contact.html'">Contact</div>
+    <div class="nav-item" onclick="location.href='login.html'">Login</div>
+  </div>
+
+  <main>
+    <section id="home" class="hero">
+      <img src="Gemini_Generated_Image_fpy8pwfpy8pwfpy8.png" alt="Industrial machinery or precise components" class="hero-image" onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/1A2B42/E0E7FF?text=Innovative+Solutions';" />
+      <div class="hero-overlay">
+        <h1 class="animate-fade-in-down">MIEVO TECHNOLOGIES PRIVATE LIMITED</h1>
+        <p class="animate-fade-in-up">Your Vision, Our Expertise, Built to Last.</p>
+        <button onclick="scrollToSection('services')" class="hero-button animate-bounce-in">
+          Explore Our Services
+        </button>
+      </div>
+    </section>
+
+    <section id="about" class="about-us-section">
+      <h2 class="section-heading">About <span class="text-teal">Us</span></h2>
+      <p class="section-description">
+        Mievo Technologies Private Limited is an Electrical & Electronics R&D Company, founded in 2018 in Kanpur, Uttar Pradesh. We are a team of 2-10 dedicated employees with 3 associated members, constantly updating and improving the online shopping experience by offering first-rate products and exceptional customer service. Our online store has become synonymous with quality, ensuring a continuous variety of fantastic merchandise that fits any budget.
+      </p>
+      <div class="about-cards-grid">
+        <div class="about-card animate-scale-in">
+          <svg class="about-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 20v-3m0 0l4.038 2.222M12 17l-4.038 2.222M12 17V5m0 0a2 2 0 110-4 2 2 0 010 4zm0 0V5a2 2 0 110-4 2 2 0 010 4zm0 0h4m-4 0H8m4 0c1.531-1.42 3.062-2.84 4.594-4.26a4.524 4.524 0 000-5.118C15.062 4.14 13.531 2.72 12 1.301"></path></svg>
+          <h3>Our Mission</h3>
+          <p>To empower businesses globally through innovative, scalable, and secure technology solutions that foster growth and efficiency in the Electrical & Electronics sector.</p>
+        </div>
+        <div class="about-card animate-scale-in delay-200">
+          <svg class="about-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          <h3>Our Vision</h3>
+          <p>To be a global leader in Electrical & Electronics R&D and manufacturing, recognized for our commitment to excellence and client success.</p>
+        </div>
+        <div class="about-card animate-scale-in delay-400">
+          <svg class="about-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+          <h3>Core Values</h3>
+          <p>Innovation, Integrity, Client-Centricity, Excellence, and Collaboration drive everything we do in Appliances, Electrical, and Electronics Manufacturing.</p>
+        </div>
+      </div>
+      <a href="about-us.html" class="cta-button small-button">Learn More About Our Journey</a>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us-section">
+      <h2 class="section-heading">Why <span class="text-teal">Choose Us?</span></h2>
+      <p class="section-description">
+        Discover what sets MievoTech apart and why we are the ideal partner for your technological needs in Electrical & Electronics R&D.
+      </p>
+      <div class="why-choose-us-grid">
+        <div class="why-choose-card animate-scale-in">
+          <svg class="why-choose-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.928 12c.38 3.141 2.07 5.916 4.717 7.248L12 21.928l4.355-2.68C19.018 17.91 20.709 15.136 21.072 12A12.001 12.001 0 0017.618 7.984z"></path></svg>
+          <h3>Proven Expertise</h3>
+          <p>Years of experience delivering successful Electrical & Electronics R&D projects.</p>
+        </div>
+        <div class="why-choose-card animate-scale-in delay-100">
+          <svg class="why-choose-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5 5 0 0010 0l-3-9m-2 0h.01M9 6h.01M4 12h.01m10 6H10l-1-4h.01m-2-4h2m-2 4h2"></path></svg>
+          <h3>Client-Centric R&D</h3>
+          <p>We tailor R&D solutions to your specific needs, focusing on innovation and quality.</p>
+        </div>
+        <div class="why-choose-card animate-scale-in delay-200">
+          <svg class="why-choose-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          <h3>Cutting-Edge Technology</h3>
+          <p>Staying ahead with advanced R&D and manufacturing techniques.</p>
+        </div>
+        <div class="why-choose-card animate-scale-in delay-300">
+          <svg class="why-choose-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+          <h3>Dedicated Support</h3>
+          <p>Reliable support and maintenance for all your electronic products.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <h2 class="section-heading">Our <span class="text-teal">Services</span></h2>
+      <p class="section-description">
+        We offer a comprehensive suite of services, backed by expertise in **GaN (Gallium Nitride)**, **Microcontrollers**, **Microprocessors**, and various **Circuit Design** principles, to propel you forward in the Electrical & Electronics industry.
+      </p>
+      <div class="services-grid">
+        <div class="service-card animate-fade-in-up">
+          <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h4l-1-1 1-6M15 14l-1 4H9l-1 1h4l-1-1 1-6m-4-6h2m-2 4h2m-2 4h2m4-4h2m-2 4h2"></path></svg>
+          <h3>Product R&D & Design</h3>
+          <p>From concept to prototype, we offer end-to-end research and development for electronic products, including advanced **Circuit Design** (Analog & Digital), **Impedance Matching**, and **Data Circuits**.</p>
+        </div>
+        <div class="service-card animate-fade-in-up delay-100">
+          <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+          <h3>PCB Design & Manufacturing</h3>
+          <p>Expertise in designing and manufacturing high-quality Printed Circuit Boards, supporting **Digital Circuit Design**, and incorporating advanced components like **GaN** and **Analog-to-Digital Converters (ADC)**.</p>
+        </div>
+        <div class="service-card animate-fade-in-up delay-200">
+          <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          <h3>Embedded Systems Development</h3>
+          <p>Developing custom embedded systems for intelligent control, automation, and IoT devices, powered by **Microcontrollers** and **Microprocessors**, with capabilities for integrating **Temperature Sensors**.</p>
+        </div>
+        <div class="service-card animate-fade-in-up delay-300">
+          <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V8m-2 0H14m-2 0V5m0 0L8 8m4-3l4 3m-4 3h2m-2 4h2"></path></svg>
+          <h3>Firmware & Hardware Programming</h3>
+          <p>Crafting robust **Firmware** and performing direct **Hardware Programming** using languages like **C**, ensuring seamless hardware-software integration for optimal device performance.</p>
+        </div>
+        <div class="service-card animate-fade-in-up delay-400">
+          <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+          <h3>Testing & Validation</h3>
+          <p>Rigorous testing and validation services to ensure product reliability and compliance across all electrical and electronic components.</p>
+        </div>
+        <div class="service-card animate-fade-in-up delay-500">
+          <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 4v-4z"></path></svg>
+          <h3>Prototyping & Production Support</h3>
+          <p>Assisting with rapid prototyping and scaling to mass production for your innovations, specializing in Appliances, Electrical, and Electronics Manufacturing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+      <h2 class="section-heading">Our Precision <span class="text-teal">Craftsmanship</span></h2>
+      <p class="section-description">
+        Showcasing a selection of our successful projects that highlight our diverse capabilities and commitment to excellence in Appliances, Electrical, and Electronics Manufacturing.
+      </p>
+      <div class="image-grid">
+        <img src="Screenshot 2025-06-16 153940.png" alt="Industrial Design for Electronics" class="gallery-image">
+        <img src="Screenshot 2025-06-16 154631.png" alt="Detailed Hardware Component" class="gallery-image">
+        <img src="Screenshot 2025-06-16 154644.png" alt="Complex Engineering Blueprint" class="gallery-image">
+        <img src="Screenshot 2025-06-16 154702.png" alt="Advanced Circuit Board Design" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154712.png" alt="Robotics Assembly Line" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154721.png" alt="Precision Tooling and Machining" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154731.png" alt="Advanced Machinery" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154744.png" alt="Integrated Electronic Systems" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154755.png" alt="Custom Fabrication of Components" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154805.png" alt="Quality Control Inspection" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154815.png" alt="Industrial Automation Solutions" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154827.png" alt="Complex Electronic Assembly" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154838.png" alt="Electronic Product Testing" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154847.png" alt="Component Manufacturing Process" class="gallery-image hidden">
+        <img src="Screenshot 2025-06-16 154855.png" alt="Technical Drawing of an Electronic Device" class="gallery-image hidden">
+      </div>
+      <button id="toggleGallery" class="load-more-button">Load More Projects</button>
+    </section>
+
+    <section id="partners" class="partners-section">
+      <h2 class="section-heading">Our Trusted <span class="text-teal">Partners</span></h2>
+      <p class="section-description">We collaborate with leading companies in Appliances, Electrical, and Electronics Manufacturing to deliver the best solutions.</p>
+      <div class="partners-grid">
+        <img src="https://placehold.co/150x80/E0E7FF/0A192F?text=Manufacturer+X" alt="Partner Logo Manufacturer X" class="partner-logo"/>
+        <img src="https://placehold.co/150x80/E0E7FF/00BCD4?text=Tech+Innovators" alt="Partner Logo Tech Innovators" class="partner-logo"/>
+        <img src="https://placehold.co/150x80/E0E7FF/FFC107?text=Component+Suppliers" alt="Partner Logo Component Suppliers" class="partner-logo"/>
+        <img src="https://placehold.co/150x80/E0E7FF/495057?text=R%26D+Labs" alt="Partner Logo R&D Labs" class="partner-logo"/>
+        <img src="https://placehold.co/150x80/E0E7FF/1A2B42?text=Distributor+Y" alt="Partner Logo Distributor Y" class="partner-logo"/>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+      <h2 class="section-heading">What Our <span class="text-teal">Clients Say</span></h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-scale-in">
+          <p class="testimonial-text">"MievoTech's R&D capabilities transformed our product line. Their expertise in electronics is unparalleled!"</p>
+          <p class="testimonial-author">- Rahul Sharma, CEO of Innovate Electronics</p>
+        </div>
+        <div class="testimonial-card animate-scale-in delay-100">
+          <p class="testimonial-text">"Their rapid prototyping service helped us bring our smart appliance to market much faster than anticipated. Highly recommend their precision craftsmanship."</p>
+          <p class="testimonial-author">- Priya Singh, Product Manager at SmartHome Devices</p>
+        </div>
+        <div class="testimonial-card animate-scale-in delay-200">
+          <p class="testimonial-text">"The embedded systems they developed for our industrial automation were robust and seamless. MievoTech is our go-to for complex electronic solutions."</p>
+          <p class="testimonial-author">- Sanjay Kumar, Operations Head at Industrial Automation Inc.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+      <h2 class="section-heading">Frequently Asked <span class="text-teal">Questions</span></h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            What kind of electronics R&D services do you offer?
+            <span class="faq-arrow"></span>
+          </button>
+          <div class="faq-answer">
+            <p>We offer comprehensive R&D services including concept development, circuit design, PCB layout, embedded firmware development, prototyping, testing, and production support for various electronic devices and systems. We specialize in **GaN**, **Microcontrollers**, **Microprocessors**, and various **Circuit Design** principles including **Analog-to-Digital Converters (ADC)**, **Digital Circuits**, **Analog Circuits**, **Impedance Matching**, and **Data Circuits**.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What is your experience in Appliances, Electrical, and Electronics Manufacturing?
+            <span class="faq-arrow"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Founded in 2018, Mievo Technologies has extensive experience in designing and developing electronic components and products for appliances, industrial electrical systems, and consumer electronics. Our team comprises experts with deep industry knowledge in areas like **Digital Electronics**.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you provide services for small businesses or startups?
+            <span class="faq-arrow"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we cater to businesses of all sizes, from startups to large enterprises. We understand the unique needs of small businesses and offer flexible, scalable solutions to help them innovate and grow their electronic products.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How does your R&D process work?
+            <span class="faq-arrow"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Our R&D process typically begins with a detailed consultation to understand your requirements, followed by feasibility studies, design, prototyping, rigorous testing, and iterative refinement. We incorporate **Hardware Programming** using languages like **C** for robust solutions.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Where are you located and what is your contact information?
+            <span class="faq-arrow"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Our headquarters are in Kanpur, Uttar Pradesh. You can reach us at 📞 +91 9807544021 or email us at 📧 contact@mievotech.com. We also offer solutions involving **Temperature Sensors** for various applications. Visit our Contact page for more details!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team-section">
+      <h2 class="section-heading">Meet Our <span class="text-teal">Team</span></h2>
+      <p class="section-description">A dedicated team of 2-10 employees with 3 associated members driving innovation in Electrical & Electronics R&D.</p>
+      <div class="team-grid">
+        <div class="team-member-card animate-fade-in-up">
+          <img src="https://placehold.co/150x150/1A2B42/FFFFFF?text=JD" alt="John Doe" class="team-member-image"/>
+          <h3>John Doe</h3>
+          <p class="team-member-role">Chief Executive Officer</p>
+          <p class="team-member-description">Visionary leader guiding MievoTech towards innovation and excellence in R&D.</p>
+        </div>
+        <div class="team-member-card animate-fade-in-up delay-100">
+          <img src="https://placehold.co/150x150/00BCD4/FFFFFF?text=JS" alt="Jane Smith" class="team-member-image"/>
+          <h3>Jane Smith</h3>
+          <p class="team-member-role">Head of Electronics Design</p>
+          <p class="team-member-description">Specializing in cutting-edge circuit and PCB design.</p>
+        </div>
+        <div class="team-member-card animate-fade-in-up delay-200">
+          <img src="https://placehold.co/150x150/FFC107/FFFFFF?text=EB" alt="Emily Brown" class="team-member-image"/>
+          <h3>Emily Brown</h3>
+          <p class="team-member-role">Embedded Systems Lead</p>
+          <p class="team-member-description">Expert in developing robust firmware for intelligent devices.</p>
+        </div>
+        <div class="team-member-card animate-fade-in-up delay-300">
+          <img src="https://placehold.co/150x150/495057/FFFFFF?text=MR" alt="Michael Reed" class="team-member-image"/>
+          <h3>Michael Reed</h3>
+          <p class="team-member-role">Hardware Prototyping Specialist</p>
+          <p class="team-member-description">Bringing electronic concepts to life through rapid prototyping.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog-section">
+      <h2 class="section-heading">Latest <span class="text-teal">Insights</span></h2>
+      <p class="section-description">Stay updated with our latest articles on Electrical & Electronics R&D, manufacturing, and industry trends.</p>
+      <div class="blog-grid">
+        <div class="blog-post-card animate-fade-in-up">
+          <img src="https://placehold.co/600x300/F8F9FA/1A2B42?text=IoT+Trends" alt="IoT Trends in Electronics" class="blog-post-image"/>
+          <div class="blog-post-content">
+            <h3>Emerging IoT Trends in Electronics Manufacturing</h3>
+            <p>Exploring how the Internet of Things is revolutionizing production and supply chains in the electronics industry.</p>
+            <a href="#" class="read-more-link">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-post-card animate-fade-in-up delay-100">
+          <img src="https://placehold.co/600x300/F8F9FA/00BCD4?text=Sustainable+Electronics" alt="Sustainable Electronics" class="blog-post-image"/>
+          <div class="blog-post-content">
+            <h3>Sustainable Practices in Electronics R&D and Production</h3>
+            <p>A look into eco-friendly approaches and materials for a greener future in electrical and electronics R&D.</p>
+            <a href="#" class="read-more-link">Read More →</a>
+          </div>
+        </div>
+        <div class="blog-post-card animate-fade-in-up delay-200">
+          <img src="https://placehold.co/600x300/F8F9FA/FFC107?text=AI+in+Hardware" alt="AI in Hardware Design" class="blog-post-image"/>
+          <div class="blog-post-content">
+            <h3>The Role of AI in Next-Gen Hardware Design</h3>
+            <p>How Artificial Intelligence is optimizing design processes and enabling more complex electronic components.</p>
+            <a href="#" class="read-more-link">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="cta-section">
+      <h2 class="section-heading animate-fade-in">Ready for Innovative Electronics R&D?</h2>
+      <p class="section-description animate-fade-in delay-200">
+        Let's discuss your next breakthrough idea. Our experts are here to help you achieve your goals.
+      </p>
+      <button onclick="location.href='contact.html'" class="cta-button animate-bounce-in delay-400">
+        Get a Free Consultation
+      </button>
+    </section>
+
+    <section id="contact and FeedBack" class="contact-section">
+      <h2 class="section-heading">Get In <span class="text-teal">Touch</span></h2>
+      <p class="section-description">
+        Have questions or want to start a project? Reach out to us through the form below or using our contact details.
+      </p>
+      <div class="contact-content-grid">
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactFormMain">
+            <div class="form-group">
+              <label for="name-main">Name</label>
+              <input type="text" id="name-main" name="name" placeholder="Your Name" required/>
+            </div>
+            <div class="form-group">
+              <label for="email-main">Email</label>
+              <input type="email" id="email-main" name="email" placeholder="Your Email" required/>
+            </div>
+            <div class="form-group">
+              <label for="message-main">Message</label>
+              <textarea id="message-main" name="message" rows="6" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info-container">
+          <h3>Contact Information</h3>
+          <p><strong class="text-teal">Email:</strong> contact@mievotech.com</p>
+          <p><strong class="text-teal">Phone:</strong> +91 9807544021</p>
+          <p><strong class="text-teal">Address:</strong> Araji-1528, Barasirohi, Kalyanpur, Kanpur, Uttar Pradesh 208016</p>
+          <p><strong class="text-teal">Website:</strong> <a href="https://www.mievotech.com" target="_blank" class="text-teal-link">www.mievotech.com</a></p>
+          <p><strong class="text-teal">Founded:</strong> 2018</p>
+          <p><strong class="text-teal">Company Size:</strong> 2-10 employees (3 associated members)</p>
+          <p><strong class="text-teal">Industry:</strong> Appliances, Electrical, and Electronics Manufacturing</p>
+
+          <div class="map-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.413725539316!2d80.2307525!3d26.513152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3701c4a8be71%3A0x3afbe880abc38436!2sIndian%20Institute%20of%20Technology%20Kanpur!5e0!3m2!1sen!2sin!4v1718876543210!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              onerror="this.src='https:/placehold.co/600x450/cccccc/333333?text=Map+Unavailable'">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button class="chat-toggle-button" onclick="toggleChat()">💬 Let's Chat!</button>
+
+    <div class="chatbot-popup" id="chatbotPopup">
+      <div class="chatbot-container">
+        <div class="chat-header">
+          <span>🤖 Mievo Assistant 🧠</span>
+          <button class="close-button" onclick="toggleChat()">×</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+          <div class="chat-message bot">Hello 👋! How can I help you today?</div>
+        </div>
+        <div class="chat-input">
+          <input type="text" id="userInput" placeholder="Type your message..." />
+          <button onclick="sendMessage()">Send</button>
+          <button onclick="toggleVoice()">🔊</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p><strong>Mievo Technologies Private Limited</strong></p>
+      <p>Electrical & Electronics R&D Company</p>
+      <p>Precision Engineering & Software Solutions</p>
+      <p>Headquarters: Kanpur, Uttar Pradesh | Founded: 2018</p>
+      <p>Company Size: 2-10 employees (3 associated members) | Industry: Appliances, Electrical, and Electronics Manufacturing</p>
+      <p>📧 contact@mievotech.com | 📞 +91 9807544021</p>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/MievoTechnologies" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/company/mievo-technologies/" target="_blank">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+      <p>© {new Date().getFullYear()} Mievo Technologies. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
