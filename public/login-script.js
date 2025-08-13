@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginSection = document.getElementById('loginSection');
     const otpSection = document.getElementById('otpSection');
 
+    // **IMPORTANT: Your actual Render backend URL**
+    const backendUrl = 'https://my-gym-website-backend.onrender.com';
+
     // Navigation logic for the different sections on the login page
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (name && email) {
             try {
                 // Send a request to the server to generate and send the OTP
-                const response = await fetch('/api/send-otp', {
+                const response = await fetch(`${backendUrl}/api/send-otp`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -63,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const otpInput = document.getElementById('otpInput').value;
 
         try {
-            const response = await fetch('/api/verify-otp', {
+            const response = await fetch(`${backendUrl}/api/verify-otp`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
